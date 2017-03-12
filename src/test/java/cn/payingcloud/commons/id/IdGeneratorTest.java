@@ -9,6 +9,11 @@ import static org.junit.Assert.assertEquals;
  */
 public class IdGeneratorTest {
     @Test
+    public void objectId() throws Exception {
+        System.out.println(IdGenerator.objectId());
+    }
+
+    @Test
     public void uuid() throws Exception {
         String uuid = IdGenerator.uuid();
         System.out.println(uuid);

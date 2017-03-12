@@ -18,4 +18,8 @@ public interface IdGenerator {
         return DEFAULT_CLUSTER_ID_GENERATOR.nextId();
     }
 
+    static String objectId() {
+        return ObjectId.get().toString();
+    }
+
 }
